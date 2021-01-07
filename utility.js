@@ -37,7 +37,7 @@ class Utility {
         let password;
         do { 
             password = readline.question("Enter valid Password: ")
-        } while (!password.match("^((?=.{8,}$)(?=.*[A-Z]))"));
+        } while (!password.match("^((?=.{8,}$)(?=.*\\d)(?=.*[A-Z]))"));
         console.log("Valid");
     }
 }
