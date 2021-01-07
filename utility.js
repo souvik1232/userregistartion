@@ -32,5 +32,13 @@ class Utility {
         } while (!phone.match("^[0-9]{2}[ ]?[0-9]{10}$"));
         console.log("Valid");
     }
+    //UC5
+    enterValidPassword=() =>{
+        let password;
+        do { 
+            password = readline.question("Enter valid Password: ")
+        } while (!password.match("^(?=.{8,}$)"));
+        console.log("Valid");
+    }
 }
 module.exports = new Utility();

@@ -4,3 +4,4 @@ utility.enterValidFirstName();
 utility.enterValidLastName();
 utility.enterValidEmailId();
 utility.enterValidPhone();
+utility.enterValidPassword();
