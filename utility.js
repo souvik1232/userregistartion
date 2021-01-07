@@ -16,5 +16,13 @@ class Utility {
         } while (!lastName.match("^[A-Z]{1}[a-z]{2,}$"));
         console.log("Valid");
     }
+    //UC3
+    enterValidEmailId=() =>{
+        let emailId;
+        do { 
+            emailId = readline.question("Enter valid Email Id: ")
+        } while (!emailId.match("^[a-zA-Z0-9\\-\\+\\.]+.([a-zA-Z0-9])*@([a-z0-9]+.[a-z]{2,}.([a-z]{2,})?)$"));
+        console.log("Valid");
+    }
 }
 module.exports = new Utility();
