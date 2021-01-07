@@ -24,5 +24,13 @@ class Utility {
         } while (!emailId.match("^[a-zA-Z0-9\\-\\+\\.]+.([a-zA-Z0-9])*@([a-z0-9]+.[a-z]{2,}.([a-z]{2,})?)$"));
         console.log("Valid");
     }
+    //UC4
+    enterValidPhone=() =>{
+        let phone;
+        do { 
+            phone = readline.question("Enter valid Phone number: ")
+        } while (!phone.match("^[0-9]{2}[ ]?[0-9]{10}$"));
+        console.log("Valid");
+    }
 }
 module.exports = new Utility();
